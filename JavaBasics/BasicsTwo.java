@@ -1,11 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-
 /**
- *
- * @author user
+ * @author kolynz
  */
 import java.util.Scanner;
 
@@ -19,7 +13,7 @@ public class BasicsTwo {
         float weight = 68.88f;
         boolean isAdult = true;
 
-        System.out.println("My name is " + firstName + " i am " + age + "years old");
+        System.out.println("My name is " + firstName + " i am " + age + "years old" );
 
         //the arithmetic operators are + - * / % 
         int arith = 5 % 2;
@@ -49,7 +43,7 @@ public class BasicsTwo {
         String userInput = ui.nextLine();
         String passInput = pi.nextLine();
         
-        System.out.println( password.equals(passInput));
+        // System.out.println( password.equals(passInput));
        
         if (username.equals(userInput) &&  password.equals(passInput)) {
             System.out.println("Welcome  " + username);
