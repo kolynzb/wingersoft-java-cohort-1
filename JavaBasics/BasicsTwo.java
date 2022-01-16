@@ -41,7 +41,7 @@ public class BasicsTwo {
         System.out.println(!isAdult);
 
         String username = "sherine";
-        String password = "passwordpassword";
+        String password = "password";
 
         Scanner ui = new Scanner(System.in);
         Scanner pi = new Scanner(System.in);
@@ -49,14 +49,14 @@ public class BasicsTwo {
         String userInput = ui.nextLine();
         String passInput = pi.nextLine();
         
-        System.out.println(username != userInput);
+        System.out.println( password.equals(passInput));
        
-        if (username == userInput &&  password == passInput) {
+        if (username.equals(userInput) &&  password.equals(passInput)) {
             System.out.println("Welcome  " + username);
 
-        } else if (username != userInput) {
+        } else if ( !username.equals(userInput)) {
             System.out.println("Wrong username");
-        } else if ( password != passInput ) {
+        } else if (  !password.equals(passInput) ) {
             System.out.println("Wrong password");
         } else {
             System.out.println("Not Authorized");
